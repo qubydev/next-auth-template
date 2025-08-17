@@ -15,7 +15,7 @@ export default async function Page({ searchParams }) {
   return (
     <div className='flex items-center justify-center h-screen'>
       <div>
-        <h1 className='text-2xl font-bold mb-4'>Welcome to Whispy</h1>
+        <h1 className='text-2xl font-bold mb-4'>Welcome to Template</h1>
         <p className='mb-4'>Please login to continue.</p>
         <form
           action={async () => {
