@@ -8,3 +8,5 @@ shut up and copy paste it!
 - database ✅
 - session ✅
 - password login (what da hyll, do it yourself bro)
+
+try out this - next-auth-template-v1.vercel.app
