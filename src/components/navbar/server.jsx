@@ -1,5 +1,5 @@
 import React from 'react'
-import { auth, signOut } from '@/auth'
+import { auth, signIn, signOut } from '@/auth'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -51,9 +51,24 @@ export default async function Navbar() {
           </DropdownMenu>
         </>
       ) : (
-        <Link href="/signin">
-          <Button type="submit">Login</Button>
-        </Link>
+        <>
+          {/* <form
+            action={async () => {
+              "use server"
+              await signIn()
+              // await signIn(undefined, {
+              //   redirect: true,
+              //   redirectTo: "/"
+              // })
+            }}
+          >
+            <Button type="submit">Login</Button>
+          </form> */}
+          {/* you could do the above one, but it sucks, it just redirects you to /signin page and nothing else */}
+          <Link href="/signin">
+            <Button type="submit">Login</Button>
+          </Link>
+        </>
       )}
     </div>
   )
